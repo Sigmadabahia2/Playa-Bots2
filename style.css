@@ -1,0 +1,169 @@
+/* Estilos globais */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: url('background.png') no-repeat center center fixed; /* Adiciona a imagem como fundo */
+  background-size: cover;
+  color: #fff;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Adiciona uma sobreposição para melhorar o contraste */
+  z-index: 1;
+}
+
+.container {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 800px;
+  padding: 30px;
+  border: 2px solid #FFC107; /* Borda amarela */
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.8); /* Fundo semi-transparente para destacar o conteúdo */
+  box-shadow: 0 0 20px rgba(255, 193, 7, 0.6);
+}
+
+/* Logo */
+header .logo h1 {
+  font-size: 4rem;
+  color: #FFC107;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+header .logo h2 {
+  font-size: 2rem;
+  color: #FFD54F;
+  margin: 10px 0 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Barra de navegação */
+nav {
+  background: linear-gradient(45deg, #333, #FFC107); /* Gradiente diagonal */
+  padding: 15px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Sombra suave para um efeito de elevação */
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul li {
+  margin: 0 25px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+nav ul li a:hover {
+  background-color: #FFB300;
+  color: #333;
+  transform: scale(1.1); /* Efeito de zoom suave ao passar o mouse */
+}
+
+nav ul li a:active {
+  transform: scale(0.98); /* Efeito de clique com leve redução */
+}
+
+/* Página de Nossos Bots */
+main h2 {
+  font-size: 2.5rem;
+  color: #FFC107;
+  margin-bottom: 20px;
+}
+
+.bots-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.bots-list li {
+  margin: 15px 0;
+}
+
+.bot-item {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #FFD54F;
+  padding: 10px 20px;
+  background: #333;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+  display: inline-block;
+}
+
+.bot-item:hover {
+  background: #FFC107;
+  color: #333;
+}
+
+/* Texto principal */
+main p {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color: #e0e0e0;
+}
+
+main p span {
+  color: #FFC107;
+  font-weight: bold;
+}
+
+/* Botão de redirecionamento */
+.redirect-btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 15px 30px;
+  font-size: 1.5rem;
+  color: #fff;
+  background: #FFC107;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  transition: background 0.3s ease;
+}
+
+.redirect-btn:hover {
+  background: #FFB300;
+  cursor: pointer;
+}
+
+/* Rodapé */
+footer p {
+  margin-top: 30px;
+  font-size: 0.9rem;
+  color: #ccc;
+}
